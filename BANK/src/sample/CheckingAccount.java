@@ -12,7 +12,7 @@ public class CheckingAccount extends sample.GenericAccount {
         this.secrectPin = secretPin;
         this.minAccountBalance = CREDITLIMIT;
         this.canTransferMoney = true;
-        this.interst = 0.0;
+        this.interest = 0.0;
 
     }
 

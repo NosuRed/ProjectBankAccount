@@ -14,7 +14,7 @@ public class SavingAccount extends sample.GenericAccount {
         this.setSecrectPin(secretPin);
         this.minAccountBalance = 0.00;
         this.canTransferMoney = false;
-        this.interst = 2.0;
+        this.interest = 2.0;
     }
 
 

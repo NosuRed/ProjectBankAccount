@@ -4,7 +4,7 @@ public abstract class GenericAccount {
     protected int secrectPin;
     protected Double AccountBalance = 0.0;
     protected Double minAccountBalance = 0.0;
-    protected Double interst;
+    protected Double interest;
     protected Boolean canTransferMoney;
 
 
@@ -15,7 +15,7 @@ public abstract class GenericAccount {
      */
     public boolean  modAccountBalance(Double amount) {
         Double newAccountBalance = AccountBalance + amount;
-        Double newInterest = newAccountBalance * (interst / 100);
+        Double newInterest = newAccountBalance * (interest / 100);
         if (newAccountBalance >= minAccountBalance) {
             AccountBalance = newAccountBalance + newInterest;
             return true;
